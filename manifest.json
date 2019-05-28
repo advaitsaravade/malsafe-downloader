@@ -1,0 +1,31 @@
+{
+  "description": "Your online security companion for websites and downloaded files.",
+  "manifest_version": 2,
+  "name": "MalSafe Downloader",
+  "version": "1.0",
+  "homepage_url": "https://github.com/advaitsaravade/safe-downloader",
+  "icons": {
+    "96": "icons/popup_active.png"
+  },
+
+  "permissions": [
+    "https://mvp.hotsoft.carleton.ca/~advait/*",
+    "https://*.googleapis.com/*",
+    "https://*.gstatic.com/*",
+    "https://*.google.com/*",
+    "downloads",
+    "downloads.open",
+    "contextMenus"
+  ],
+
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": "icons/shield_active.png",
+    "default_title": "Safe Downloader",
+    "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

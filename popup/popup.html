@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+  </head>
+<body>
+  <div id="head">
+    <img src="../icons/back.png" id="back">
+    <img src="../icons/malsafelogo.png" id="logo">
+    <p id="headertext">Download Analysis</p>
+    <img src="../icons/close.png" id="close">
+  </div>
+  <ul id="downloadlist"></ul>
+  <div id="itemanalysis">
+    <p id="resultsloading">
+      <img src="../icons/loading.gif">
+      MalSafe is running an analysis on your file
+    </p>
+    <div id="analysis">
+      <h1 id="analysisheader">Harmful Download</h1>
+      <p id="analysismessage">This is a harmful malware application and as such should be deleted immediatelly.</p>
+      <table id="harmfulaction">
+        <tr>
+          <td>
+            <p id="malwaretutorial">OPEN FILE</p>
+          </td>
+          <td>
+            <p id="openfolder1">OPEN FOLDER</p>
+          </td>
+        </tr>
+      </table>
+      <table id="normalaction">
+        <tr>
+          <td>
+            <p id="openfile">OPEN FILE</p>
+          </td>
+          <td>
+            <p id="openfolder2">OPEN FOLDER</p>
+          </td>
+        </tr>
+      </table>
+      <p id="analysisactionstatus">You successfully deleted the downloaded file. Awesome!</p>
+    </div>
+  </div>
+  <p id="errortext">
+    <img src="../icons/omni_logo.png">
+    Once you download a file, it will show up here for analysis.
+  </p>
+  <script src="../assets/jquery/jquery.3.4.1.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

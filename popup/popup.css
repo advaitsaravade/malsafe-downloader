@@ -1,0 +1,239 @@
+html, body {
+  min-width: 300px;
+  margin: 0;
+  background: #f6faff;
+}
+#head
+{
+  text-align: center;
+   padding-top: 8px;
+   padding-bottom: 7px;
+   border-bottom: 1px solid #eee;
+   background: #FFF;
+}
+#back
+{
+  width: 22px;
+  position: absolute;
+  top: 23px;
+  left: 20px;
+  cursor: pointer;
+  display: none;
+}
+#logo
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+}
+#headertext
+{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 240px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 400;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+#close
+{
+  width: 22px;
+  opacity: 0.3;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  cursor: pointer;
+}
+#downloadlist
+{
+  min-width: 500px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+#itemanalysis
+{
+  min-width: 500px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+#downloadlist li
+{
+  margin: 15px 15px;
+  padding: 0;
+  margin-top: 5px;
+  background: #FFF;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition:All 0.2s ease-in-out;
+}
+#downloadlist li:hover
+{
+  border: 1px solid #dfdfdf;
+}
+#downloadlist li table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0px;
+}
+#downloadlist li table #information
+{
+  width: 87%;
+}
+#downloadlist li table #information #td1
+{
+  width: 13%;
+}
+#downloadlist li table #information #td2
+{
+  width: 90%;
+}
+#downloadlist li table #information #fileicon
+{
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+#downloadlist li table #information #metaholder
+{
+  display: block;
+  margin-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#downloadlist li table #information #metaholder #filename
+{
+  color: #020318;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 0px;
+}
+#downloadlist li table #information #metaholder #filemeta
+{
+  color: #878787;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin: 0;
+  margin-top: 10px
+}
+#downloadlist li table #actionbutton1
+{
+  width: 10%;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+#downloadlist li table #actionbutton1 img
+{
+  width: 34px;
+  height: 34px;
+  opacity: 0.6;
+  margin-right: 5px;
+}
+#subtable tr td {
+  border-bottom: 0px;
+}
+#itemanalysis #resultsloading {
+  display: none;
+  color: #878fa3;
+  line-height: 22px;
+  text-align: center;
+  padding: 20px 40px 30px 40px;
+}
+#itemanalysis #resultsloading img
+{
+  opacity: 0.1;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(1);
+}
+#itemanalysis #analysis {
+  display: none;
+  color: #878fa3;
+  line-height: 22px;
+  text-align: center;
+  padding: 20px 40px 30px 40px;
+}
+#itemanalysis #analysis #analysisheader
+{
+  color: #FFF;
+  font-size: 23px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+}
+#itemanalysis #analysis #analysismessage
+{
+  color: #FFF;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+}
+#itemanalysis #analysis #harmfulaction, #itemanalysis #analysis #normalaction
+{
+  display: none;
+  width: 100%;
+  table-layout:fixed;
+  text-align: center;
+}
+#itemanalysis #analysis #harmfulaction td, #itemanalysis #analysis #normalaction td
+{
+  text-align: center;
+}
+#malwaretutorial, #openfolder1, #openfolder2, #openfile
+{
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+  padding: 12px 18px;
+  margin: 10px 15px;
+  background: #747ff9;
+  border: 2px solid #747ff9;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  transition: All 0.2s ease-in-out;
+}
+#malwaretutorial:hover, #openfolder1:hover, #openfolder2:hover, #openfile:hover
+{
+  background: rgba(0,0,0,0);
+  color: #747ff9;
+}
+#itemanalysis #analysis #analysisactionstatus
+{
+  display: none;
+}
+#errortext {
+  display: block;
+  color: #878fa3;
+  line-height: 22px;
+  text-align: center;
+  padding: 20px 40px 30px 40px;
+}
+#errortext img
+{
+  opacity: 0.1;
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(1);
+}\
