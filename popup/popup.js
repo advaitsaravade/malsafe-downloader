@@ -1,4 +1,5 @@
 var tempDownloadID;
+var safebrowsingkey = config.API_KEY;
 
 function initializeLatestDownload(item) {
   downloadFileName =  /[^/]*$/.exec(item.filename)[0];
@@ -130,7 +131,7 @@ $(document).on('click', '#downloaditem', function(e) {
   chrome.downloads.search({id: tempDownloadID}, function(item) {
     $('#resultsloading').css("display","block");
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "https://safebrowsing.googleapis.com/v4/threatMatches:find?key=AIzaSyABrgq5JmPs_A4VtSa3pGeI7AafQTTMhg8", true);
+    xhr.open("POST", "https://safebrowsing.googleapis.com/v4/threatMatches:find?key="+safebrowsingkey, true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({
       client: {
