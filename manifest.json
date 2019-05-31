@@ -9,7 +9,7 @@
   },
 
   "permissions": [
-    "https://mvp.hotsoft.carleton.ca/~advait/*",
+    "https://mvp.soft.carleton.ca/~advait/*",
     "https://*.googleapis.com/*",
     "https://*.gstatic.com/*",
     "https://*.google.com/*",

@@ -8,35 +8,101 @@
     <link rel="stylesheet" type="text/css" href="modelbuilder.css">
   </head>
   <body>
-    <div id="parent">
-      <div id="child">
-        <div class="owl-carousel">
-          <div>
-            <img id="illustration" src="../assets/welcome.svg">
-            <h1>In order to open that file, please understand the risks.</h1>
-            <p>This is a short tutorial to help you understand the kind of risk you may be putting yourself in by trying to open that file. After completing
-            the tutorial, you will be able to decided whether to open or delete your recent download.</p>
+        <div id="holder">
+          <div id="page1" class="page">
+            <div id="container">
+              <h1>In order to open that file, understand the risk.</h1>
+              <p class="paragraph">On completing the short (~ 50 seconds) tutorial, you will be able to
+                decided whether you wish to open or delete your recent download.</p>
+            </div>
+            <a href="#page2" class="button" id="button1">OK, START</a>
           </div>
-          <div>
-            <img id="illustration" src="../assets/welcome.svg">
-            <h1>In order to open that file, please understand the risks.</h1>
-            <p>This is a short tutorial to help you understand the kind of risk you may be putting yourself in by trying to open that file. After completing
-            the tutorial, you will be able to decided whether to open or delete your recent download.</p>
+          <div id="page2" class="page">
+            <table>
+              <tr>
+                <td>
+                  <img src="../assets/welcome.svg">
+                  <p class="caption">Your anti-virus is like a security camera connected to a criminal database.</p>
+                </td>
+                <td>
+                  <h1>What is a malware/virus scanner?</h1>
+                  <p class="paragraph">Imagine you have a house (computer), and you want to protect its contents from criminals (malware). So you come up with the following idea:<br><br>
+                    <b>In front of each door, you will put a security camera.</b> It will scan every one that tries to enter the house. The camera is linked to a
+                    criminal records database. If it spots someone that is in the database it will send you a text message and prevent them from entering your house.</p>
+                    <a href="#page3" class="button" id="button2">NEXT SLIDE</a>
+                </td>
+              </tr>
+            </table>
           </div>
-          <div><img id="illustration" src="../assets/done.svg">
-          <h1>Would you still like to open your download?</h1>
-          <p>After having learned about how malware can affect you, would you still like to open your download?</p></div>
+          <div id="page3" class="page">
+            <table>
+              <tr>
+                <td>
+                  <h1>What are the problems with this approach?</h1>
+                  <ol><li>The criminal database copy can become out of date.</li>
+                    <li>If someone has just started their life of crime, and is not in the database, then it lets them in.</li>
+                    <li>It treats everyone the same: You, your spouse, your kids, friends, neighbors, <b>random strangers</b>, are all let in (if
+                    they are not in the database).</li>
+                    <li>People with a mask or paper bag over their head are let in as well.</li>
+                  </ol>
+                  <a href="#page4" class="button" id="button3">NEXT SLIDE</a>
+                </td>
+                <td>
+                  <img src="../assets/jasonmask.svg">
+                  <p class="caption">Malware can deceive your anti-virus protection by pretending to be legitimate.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="page4" class="page">
+            <table>
+              <tr>
+                <td>
+                  <img src="../assets/developer.svg">
+                  <p class="caption">Criminals are always one step ahead of modern anti-virus systems, and can invent new ways to deceive your computer's security.</p>
+                </td>
+                <td>
+                  <h1>Why should we not rely on such a system?</h1>
+                  <p class="paragraph">Criminals can and are always finding ways to trick the camera. This means that our security camera can be tricked
+                    and does not always keep criminals from entering our house.
+                  </p>
+                  <a href="#page5" class="button" id="button4">NEXT SLIDE</a>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="page5" class="page">
+            <table>
+              <tr>
+                <td>
+                  <h1>Is there a better, more secure way?</h1>
+                  <p class="paragraph"><b>Instead of a list of people to keep out, have a list of people to let in.</b> Everytime you meet someone you'd trust into your house,
+                    add their name to your security system.<br><br>Wouldn't you like to have complete control over who you'd allow into the privacy of your home?</p>
+                  </p>
+                  <a href="#page6" class="button" id="button5">NEXT SLIDE</a>
+                </td>
+                <td>
+                  <img src="../assets/approve.svg">
+                  <p class="caption">By treating you computer like your house, you will be better equipped to decide whether or not you would like to open
+                    the doors of your computer to your recent download.</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div id="page6" class="page">
+            <div id="container">
+              <h1>Would you like to open your file?</h1>
+              <p class="paragraph">After having learned how your computer
+              operates, and how your download can affect your computer (house), would you still like to open the file and potentially open
+              the door to your computer?<br><br>Do so only if you are sure the source of the file is a person or website that you entirely trust.</p>
+            </div>
+            <span class="button" id="open">OPEN</span>
+            <span class="button" id="delete">DELETE</span>
+          </div>
         </div>
-        <table id="navholder">
-          <tr>
-            <td><span id="button" class="prevbutton buttondisabled">BACK</span></td>
-            <td><span id="button" class="nextbutton">BEGIN</span></td>
-          </tr>
-        <table>
       </div>
     </div>
   </body>
   <script src="../assets/jquery/jquery.3.4.1.min.js"></script>
-  <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
   <script src="modelbuilder.js"></script>
 </html>

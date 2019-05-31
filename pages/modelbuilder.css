@@ -1,73 +1,279 @@
-#illustration
-{
-  margin-top: 50px;
-  width: 40vw;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: block;
+* {
+  border: 0px solid rgba(255,0,0,1);
 }
-h1
+html, body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.page
 {
-  width: 80vw;
+  height: 100vh;
+  position: relative;
+}
+.page h1
+{
   font-family: 'Roboto', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
   font-weight: 500;
-  font-style: normal;
-  font-size: 25px;
-  margin-top: 30px;
+  font-size: 50px;
+  line-height: 65px;
 }
-p
+.page .paragraph, .page ol li
 {
-  width: 60%;
   font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  color: #FFF;
+  line-height: 40px;
+}
+.page .caption
+{
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  color: #969696;
+  line-height: 25px;
+  text-align: center;
+}
+.page ol
+{
+  margin-top: 27px;
+}
+.page .button
+{
+  display: inline-block;
+  padding: 20px 25px;
+  border: 2px solid white;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+  transition:All 0.2s ease-in-out;
+}
+.page table
+{
+  border-collapse: collapse;
+  border-spacing: none;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.page table tr td
+{
+  display: inline-block;
+  width: 48%;
+}
+.page table tr td img
+{
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page1
+{
+  background: #000;
+  position: relative;
+}
+#page1 #container
+{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+#page1 h1
+{
+  color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+}
+#page1 .paragraph
+{
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-weight: 300;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 28px;
 }
-#navholder {
-  text-align: center;
+#page1 #button1
+{
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#page1 #button1:hover
+{
+  background: white;
+  color: black;
+}
+#page2 h1
+{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+#page2 .paragraph
+{
+  color: #000;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+#page2 #button2
+{
   margin-top: 30px;
+  border: 2px solid black;
+  color: black;
+  position: absolute;
+  right: 9%;
+}
+#page2 #button2:hover
+{
+  background: black;
+  color: white;
+}
+#page3 h1
+{
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-#button
+#page3 ol
+{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page3 ol li
+{
+  color: black;
+  margin-top: 27px;
+}
+#page3 #button3
+{
+  margin-top: 30px;
+  border: 2px solid black;
+  color: black;
+  margin-left: 10%;
+}
+#page3 #button3:hover
+{
+  background: black;
+  color: white;
+}
+#page4 h1
+{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+#page4 .paragraph
+{
+  color: #000;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+#page4 #button4
+{
+  margin-top: 30px;
+  border: 2px solid black;
+  color: black;
+  position: absolute;
+  right: 9%;
+}
+#page4 #button4:hover
+{
+  background: black;
+  color: white;
+}
+#page5 h1
+{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page5 .paragraph
+{
+  color: black;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#page5 #button5
+{
+  margin-top: 30px;
+  border: 2px solid black;
+  color: black;
+  margin-left: 10%;
+}
+#page5 #button5:hover
+{
+  background: black;
+  color: white;
+}
+#page6
+{
+  background: #000;
+  position: relative;
+}
+#page6 #container
+{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+#page6 h1
+{
+  color: #FFF;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: center;
+}
+#page6 .paragraph
+{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#page6 .button
 {
   cursor: pointer;
-  background: #3b4bd4;
-  text-decoration: none;
-  color: #FFF;
-  padding: 12px 25px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
-  margin-right: 10px;
-  margin-left: 10px;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  transition:All 0.2s ease-in-out;
--webkit-transition:All 0.2s ease-in-out;
--moz-transition:All 0.2s ease-in-out;
--o-transition:All 0.2s ease-in-out;
-  user-select: none;
 }
-.buttondisabled
+#page6 #open
 {
-  opacity: 0.2;
-  user-select: none;
-  cursor: default !important;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-150%);
 }
-#button:hover
+#page6 #delete
 {
-  background: #3140bf;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(0%);
 }
-.buttondisabled:hover
+#page6 #open:hover, #page6 #delete:hover
 {
-  background: #3b4bd4 !important;
+  background: white;
+  color: black;
 }

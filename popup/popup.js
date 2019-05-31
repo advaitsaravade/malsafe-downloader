@@ -143,7 +143,7 @@ $(document).on('click', '#downloaditem', function(e) {
         platformTypes:    ["ANY_PLATFORM"],
         threatEntryTypes: ["URL"],
         threatEntries: [
-          {url: item[0].url}
+          {url: item[0].url+","+item[0].refferer}
         ]
       }
     }));
@@ -152,6 +152,7 @@ $(document).on('click', '#downloaditem', function(e) {
       if(xhr.readyState == 4) {
         $('#resultsloading').css("display","none");
         $('#analysis').css('display', 'block');
+        console.log(xhr);
         var responseObj = JSON.parse(xhr.responseText);
         if("matches" in responseObj) {
           /*$('body').css('background', 'red');
